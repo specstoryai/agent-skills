@@ -1,6 +1,10 @@
 ---
 name: specstory-project-stats
-description: Get project statistics from SpecStory
+description: Fetch project statistics from SpecStory's cloud platform. Use when user says "get project stats", "show SpecStory stats", "project statistics", or "SpecStory metrics". Displays contributor counts, commit activity, and other project metrics.
+license: Apache-2.0
+metadata:
+  author: SpecStory
+  version: "1.0.0"
 allowed-tools: Bash(node *)
 ---
 
@@ -15,7 +19,7 @@ When invoked, this skill will:
    - `.specstory/.project.json` file (using `git_id` or `workspace_id`)
    - Git repository name from `.git/config` (remote "origin")
    - Current folder name as fallback
-2. Fetch statistics from the SpecStory API at `https://cloud.specstory.com` (configurable via `SPECSTORY_API_URL` environment variable)
+2. Fetch statistics from the SpecStory API at `https://cloud.specstory.com` (default, configurable via `SPECSTORY_API_URL` environment variable)
 3. Display the statistics to the user
 
 ## Instructions

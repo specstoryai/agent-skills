@@ -10,6 +10,19 @@ Built by [SpecStory](https://specstory.com). SpecStory captures full AI conversa
 
 Skills are markdown files that give AI agents specialized knowledge and workflows for specific tasks. When you add these to your project, Claude Code can recognize relevant tasks and apply the right frameworks and analysis patterns.
 
+## Prerequisites
+
+These skills work with your local `.specstory/history` directory, which is created by [SpecStory](https://github.com/specstoryai/getspecstory) when capturing AI coding sessions.
+
+**Install SpecStory for your tool:**
+
+| Tool | Installation |
+|------|--------------|
+| **Cursor / VS Code** | Search "SpecStory" in Extensions (Cmd/Ctrl+Shift+X) |
+| **Claude Code / CLI agents** | `brew tap specstoryai/tap && brew install specstory` |
+
+Once installed, your AI conversations are automatically saved to `.specstory/history/` in each project.
+
 ## Available Skills
 
 <!-- SKILLS:START -->
@@ -134,19 +147,6 @@ You can also invoke skills directly:
 ### Organization & Maintenance
 - `specstory-organize` - Keep history files organized by year/month
 - `specstory-guard` - Pre-commit hook to catch secrets in history files
-
-## Prerequisites
-
-These skills work with your local `.specstory/history` directory, which is created by [SpecStory](https://github.com/specstoryai/getspecstory) when capturing AI coding sessions.
-
-**Install SpecStory for your tool:**
-
-| Tool | Installation |
-|------|--------------|
-| **Cursor / VS Code** | Search "SpecStory" in Extensions (Cmd/Ctrl+Shift+X) |
-| **Claude Code / CLI agents** | `brew tap specstoryai/tap && brew install specstory` |
-
-Once installed, your AI conversations are automatically saved to `.specstory/history/` in each project.
 
 ## Contributing
 

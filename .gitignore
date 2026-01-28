@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# SpecStory (local session history)
+.specstory/
+
+# Cursor
+.cursorindexingignore
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Misc
+*.log
+.env
+.env.local

@@ -1,6 +1,6 @@
 ---
 name: specstory-yak
-description: Analyze your AI coding sessions for yak shaving - when your initial goal got derailed into rabbit holes. Run when user says "analyze my yak shaving", "check for rabbit holes", "how distracted was I", or "yak shave score".
+description: Analyze your SpecStory AI coding sessions for yak shaving - when your initial goal got derailed into rabbit holes. Run when user says "analyze my yak shaving", "check for rabbit holes", "how distracted was I", or "yak shave score".
 license: Apache-2.0
 metadata:
   author: specstory

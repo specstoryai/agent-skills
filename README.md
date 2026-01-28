@@ -23,6 +23,8 @@ These skills work with your local `.specstory/history` directory, which is creat
 
 Once installed, your AI conversations are automatically saved to `.specstory/history/` in each project.
 
+> **Note for contributors:** Don't run `npx skills add` from within this repo - it will install skills into the repo directory. The `.gitignore` excludes these directories, but install skills in your actual projects instead.
+
 ## Available Skills
 
 <!-- SKILLS:START -->

@@ -24,7 +24,51 @@ Skills are markdown files that give AI agents specialized knowledge and workflow
 
 ## Installation
 
-### Option 1: Clone and Copy (Recommended)
+### Option 1: Skills CLI (Recommended)
+
+Use [npx skills](https://skills.sh) to install skills directly:
+
+```bash
+# Install all skills
+npx skills add specstoryai/agent-skills
+
+# Install specific skills
+npx skills add specstoryai/agent-skills --skill specstory-yak specstory-session-summary
+
+# List available skills
+npx skills add specstoryai/agent-skills --list
+```
+
+This automatically installs to your `.claude/skills/` directory.
+
+### Option 2: Claude Code Plugin
+
+Install via Claude Code's built-in plugin system:
+
+```bash
+# Add the marketplace
+/plugin marketplace add specstoryai/agent-skills
+
+# Install all SpecStory skills
+/plugin install specstory-skills
+```
+
+### Option 3: SkillKit (Multi-Agent)
+
+Use [SkillKit](https://github.com/rohitg00/skillkit) to install skills across multiple AI agents (Claude Code, Cursor, Copilot, etc.):
+
+```bash
+# Install all skills
+npx skillkit install specstoryai/agent-skills
+
+# Install specific skills
+npx skillkit install specstoryai/agent-skills --skill specstory-yak specstory-session-summary
+
+# List available skills
+npx skillkit install specstoryai/agent-skills --list
+```
+
+### Option 4: Clone and Copy
 
 Clone the entire repo and copy the skills folder:
 
@@ -33,7 +77,7 @@ git clone https://github.com/specstoryai/agent-skills.git
 cp -r agent-skills/skills/* .claude/skills/
 ```
 
-### Option 2: Git Submodule
+### Option 5: Git Submodule
 
 Add as a submodule for easy updates:
 
@@ -43,7 +87,7 @@ git submodule add https://github.com/specstoryai/agent-skills.git .claude/agent-
 
 Then reference skills from `.claude/agent-skills/skills/`.
 
-### Option 3: Fork and Customize
+### Option 6: Fork and Customize
 
 1. Fork this repository
 2. Customize skills for your specific needs

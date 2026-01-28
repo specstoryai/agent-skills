@@ -137,23 +137,10 @@ You can also invoke skills directly:
 
 Found a way to improve a skill? Have a new skill to suggest? PRs and issues welcome!
 
-### Adding a New Skill
-
-1. Create a new directory under `skills/` with your skill name
-2. Add a `SKILL.md` file with YAML frontmatter:
-   ```yaml
-   ---
-   name: your-skill-name
-   description: Brief description of what the skill does
-   license: Apache-2.0
-   metadata:
-     author: your-name
-     version: "1.0.0"
-   ---
-   ```
-3. Add any supporting scripts in a `scripts/` subdirectory
-4. Include a `LICENSE.txt` file (Apache 2.0)
-5. Open a PR!
+See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines on:
+- Repository structure and GitHub workflows
+- How to add a new skill
+- Naming conventions and PR checklist
 
 ## License
 

@@ -42,6 +42,8 @@ When invoked via `/specstory-yak`, interpret the user's natural language:
 | `/specstory-yak from jan 15 to jan 20` | `--from 2026-01-15 --to 2026-01-20` |
 | `/specstory-yak by modification time` | `--by-mtime` |
 | `/specstory-yak last 14 days as json` | `--days 14 --json` |
+| `/specstory-yak save to yak-report.md` | `-o yak-report.md` |
+| `/specstory-yak last 90 days output to report` | `--days 90 -o report.md` |
 
 ### Direct Script Usage
 
@@ -58,6 +60,7 @@ python /path/to/skills/specstory-yak/scripts/analyze.py [options]
 - `--json` - Output as JSON
 - `--verbose` - Show detailed analysis
 - `--by-mtime` - Filter by file modification time instead of filename date
+- `-o, --output FILE` - Write report to file (auto-adds .md or .json extension)
 
 **Examples:**
 
@@ -76,6 +79,12 @@ python scripts/analyze.py --days 7 --by-mtime
 
 # JSON output for further processing
 python scripts/analyze.py --days 14 --json
+
+# Save report to a markdown file
+python scripts/analyze.py --days 90 -o yak-report.md
+
+# Save JSON to a file
+python scripts/analyze.py --days 30 --json -o yak-data.json
 ```
 
 ## Output

@@ -43,7 +43,7 @@ To use a different SpecStory API endpoint (e.g., production):
 SPECSTORY_API_URL=https://cloud.specstory.com node skills/specstory-project-stats/scripts/get-stats.js
 ```
 
-By default, the script uses `http://localhost:5173` for local development.
+By default, the script uses `https://cloud.specstory.com`, for local development you can override it with `SPECSTORY_API_URL=http://localhost:5173`.
 
 ## API Endpoint
 
@@ -53,7 +53,7 @@ The skill calls:
 ```
 
 Where:
-- `baseUrl` defaults to `http://localhost:5173` for local development (configurable via `SPECSTORY_API_URL`, use `https://cloud.specstory.com` for production)
+- `baseUrl` defaults to `https://cloud.specstory.com` (configurable via `SPECSTORY_API_URL`, use `http://localhost:5173` for local development)
 - `projectId` is calculated as described above
 
 ## Requirements
@@ -71,7 +71,7 @@ Where:
 
 ```
 Project ID: a1b2-c3d4-e5f6-7890
-Fetching stats from: http://localhost:5173/api/v1/projects/a1b2-c3d4-e5f6-7890/stats
+Fetching stats from: https://cloud.specstory.com/api/v1/projects/a1b2-c3d4-e5f6-7890/stats
 
 Stats:
 {

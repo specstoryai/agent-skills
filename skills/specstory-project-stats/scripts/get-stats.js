@@ -136,7 +136,7 @@ function fetchStats(projectId, baseUrl) {
  */
 async function main() {
     try {
-        const baseUrl = process.env.SPECSTORY_API_URL || 'http://localhost:5173';
+        const baseUrl = process.env.SPECSTORY_API_URL || 'https://cloud.specstory.com';
         const projectId = calculateProjectId();
 
         console.log(`Project ID: ${projectId}`);

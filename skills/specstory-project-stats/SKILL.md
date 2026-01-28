@@ -15,7 +15,7 @@ When invoked, this skill will:
    - `.specstory/.project.json` file (using `git_id` or `workspace_id`)
    - Git repository name from `.git/config` (remote "origin")
    - Current folder name as fallback
-2. Fetch statistics from the SpecStory API at `http://localhost:5173` (local development default, configurable via `SPECSTORY_API_URL` environment variable)
+2. Fetch statistics from the SpecStory API at `https://cloud.specstory.com` (configurable via `SPECSTORY_API_URL` environment variable)
 3. Display the statistics to the user
 
 ## Instructions
@@ -35,7 +35,7 @@ When this skill is invoked, execute the following:
 
 ## Environment Variables
 
-- `SPECSTORY_API_URL`: Override the default API endpoint (default: `http://localhost:5173` for local development, use `https://cloud.specstory.com` for production)
+- `SPECSTORY_API_URL`: Override the default API endpoint (default: `https://cloud.specstory.com`, use `http://localhost:5173` for local development)
 
 ## Example Output
 

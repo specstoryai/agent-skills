@@ -10,7 +10,7 @@ Skills are markdown files that give AI agents specialized knowledge and workflow
 
 ## Prerequisites
 
-These skills work with your local `.specstory/history` directory, which is created by [SpecStory](https://github.com/specstoryai/getspecstory) when capturing AI coding sessions.
+These skills work with your local `.specstory/history` directory ([or cloud.specstory.com APIs](https://docs.specstory.com/api-reference/introduction)), which is created by [SpecStory](https://github.com/specstoryai/getspecstory) when capturing AI coding sessions.
 
 **Install SpecStory for your tool:**
 

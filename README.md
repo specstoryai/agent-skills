@@ -28,11 +28,11 @@ Once installed, your AI conversations are automatically saved to `.specstory/his
 <!-- SKILLS:START -->
 | Skill | Description |
 |-------|-------------|
-| [specstory-guard](skills/specstory-guard/) | Install a pre-commit guardrail that scans .specstory/history for potential secrets and blocks commits until they are removed or redacted. |
+| [specstory-guard](skills/specstory-guard/) | Install a pre-commit guardrail that scans .specstory/history for potential secrets and blocks commits until they are... |
 | [specstory-link-trail](skills/specstory-link-trail/) | Review SpecStory history transcripts and create a summary of all URLs that were fetched via WebFetch. |
-| [specstory-organize](skills/specstory-organize/) | Organizes the project's .specstory/history directory into year and month subfolders. |
-| [specstory-session-summary](skills/specstory-session-summary/) | Summarize recent SpecStory sessions in standup format. Use when the user wants to review recent coding sessions, prepare for standups, or track work progress. |
-| [specstory-yak](skills/specstory-yak/) | Analyze your AI coding sessions for yak shaving - when your initial goal got derailed into rabbit holes. Get a "yak shave score" for each session. |
+| [specstory-organize](skills/specstory-organize/) | Organizes the project's .specstory/history directory into year and month subfolders |
+| [specstory-session-summary](skills/specstory-session-summary/) | Summarize recent SpecStory sessions in standup format. Use when the user wants to review recent coding sessions,... |
+| [specstory-yak](skills/specstory-yak/) | Analyze your SpecStory AI coding sessions for yak shaving - when your initial goal got derailed into rabbit holes. Run... |
 <!-- SKILLS:END -->
 
 ## Installation

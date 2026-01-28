@@ -1,7 +1,7 @@
 ---
 name: specstory-yak
 description: Analyze your AI coding sessions for yak shaving - when your initial goal got derailed into rabbit holes. Run when user says "analyze my yak shaving", "check for rabbit holes", "how distracted was I", or "yak shave score".
-license: MIT
+license: Apache-2.0
 metadata:
   author: specstory
   version: "1.0.0"
@@ -145,7 +145,52 @@ The yak shave score (0-100) is computed from:
 
 ## Present Results to User
 
-When presenting results, highlight:
+**IMPORTANT**: After running the analyzer script, you MUST add a personalized LLM-generated summary at the very top of your response, BEFORE showing the raw report output.
+
+### LLM Summary Guidelines
+
+Generate a 3-5 sentence personalized commentary that:
+
+1. **Opens with a verdict** - A witty one-liner about the overall state (e.g., "Your coding sessions this week were... an adventure." or "Remarkably disciplined! Someone's been taking their focus vitamins.")
+
+2. **Calls out the highlight** - Reference the most notable session specifically:
+   - If high yak shave: "That January 25th button fix that somehow became a Kubernetes migration? *Chef's kiss* of scope creep."
+   - If low yak shave: "Your January 26th auth flow explanation was surgical - in and out, no detours."
+
+3. **Identifies a pattern** - Note any recurring theme:
+   - "You seem to yak shave most when starting with UI tasks"
+   - "Late night sessions are your danger zone"
+   - "Your refactoring sessions tend to stay focused"
+
+4. **Ends with actionable advice or a joke** - Either:
+   - A practical tip: "Consider time-boxing those 'quick CSS fixes' - they have a 73% yak shave rate"
+   - Or a joke: "At this rate, your next typo fix will result in a complete rewrite of the Linux kernel"
+
+### Example LLM Summary
+
+```
+## 🐃 Your Yak Shave Analysis
+
+Well, well, well. You came to fix buttons and left having rewritten half the
+infrastructure. Your average yak shave score of 47/100 puts you firmly in
+"classic developer behavior" territory.
+
+The standout? That January 25th session where a CSS alignment fix somehow
+evolved into a full Kubernetes deployment overhaul. Four domain shifts later,
+you probably forgot what a button even looks like.
+
+Pattern I noticed: Your UI tasks have a 58% higher yak shave rate than your
+code review sessions. Maybe start labeling those "quick UI fixes" as
+"potential 3-hour adventures" in your calendar.
+
+Here's the full breakdown:
+```
+
+Then show the raw report output below your summary.
+
+### What to Highlight
+
+After your summary, when presenting the raw results:
 1. The **worst offenders** with before/after comparison
 2. **Patterns** in when/what causes yak shaving
 3. **Actionable insight** - what task types to watch out for

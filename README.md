@@ -31,6 +31,7 @@ Once installed, your AI conversations are automatically saved to `.specstory/his
 | [specstory-guard](skills/specstory-guard/) | Install a pre-commit guardrail for SpecStory AI coding sessions that scans .specstory/history for potential secrets and... |
 | [specstory-link-trail](skills/specstory-link-trail/) | Review SpecStory AI coding sessions in .specstory/history and create a summary of all URLs that were fetched via... |
 | [specstory-organize](skills/specstory-organize/) | Organizes SpecStory AI coding sessions in the project's .specstory/history directory into year and month subfolders. |
+| [specstory-project-stats](skills/specstory-project-stats/) | Fetch project statistics from SpecStory's cloud platform. Use when user says "get project stats", "show SpecStory... |
 | [specstory-session-summary](skills/specstory-session-summary/) | Summarize recent SpecStory AI coding sessions in standup format. Use when the user wants to review sessions from... |
 | [specstory-yak](skills/specstory-yak/) | Analyze your SpecStory AI coding sessions in .specstory/history for yak shaving - when your initial goal got derailed... |
 <!-- SKILLS:END -->

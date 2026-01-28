@@ -12,13 +12,14 @@
   "plugins": [
     {
       "name": "specstory-skills",
-      "description": "5 skills for working with SpecStory session histories: yak shave analysis, session summaries, link trails, file organization, and secret scanning",
+      "description": "6 skills for working with SpecStory session histories: yak shave analysis, session summaries, link trails, file organization, and secret scanning",
       "source": "./",
       "strict": false,
       "skills": [
         "./skills/specstory-guard",
         "./skills/specstory-link-trail",
         "./skills/specstory-organize",
+        "./skills/specstory-project-stats",
         "./skills/specstory-session-summary",
         "./skills/specstory-yak"
       ]

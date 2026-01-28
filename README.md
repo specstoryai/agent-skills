@@ -8,7 +8,7 @@ Built by [SpecStory](https://specstory.com). SpecStory captures full AI conversa
 
 ## What are Skills?
 
-Skills are markdown files that give AI agents specialized knowledge and workflows for specific tasks. When you add these to your project, Claude Code can recognize relevant tasks and apply the right frameworks and analysis patterns.
+Skills are markdown files that give AI agents specialized knowledge and workflows for specific tasks. When you add these to your project, Claude Code (or agents like Codex, Cursor, Gemini, Copilot) can recognize relevant tasks and apply the right frameworks and analysis patterns.
 
 ## Prerequisites
 

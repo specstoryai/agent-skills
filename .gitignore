@@ -32,6 +32,16 @@ env/
 .coverage
 htmlcov/
 
+# Agent skill installations (created by npx skills add)
+.agent/
+.agents/
+.claude/
+.codex/
+.cursor/
+.gemini/
+.opencode/
+.windsurf/
+
 # Misc
 *.log
 .env

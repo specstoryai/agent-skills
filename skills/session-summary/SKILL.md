@@ -16,13 +16,21 @@ Argument provided: `$ARGUMENTS` (default: 5 sessions, or "today" for today's ses
 
 ### Step 1: Find Recent Sessions
 
-First, list the recent session files:
+First, check if the SpecStory history folder exists and list recent session files:
 
 ```zsh
 ls -t .specstory/history/*.md 2>/dev/null | head -20
 ```
 
-If the argument is "today", filter to today's date. Otherwise use the number provided (default 5).
+**If no `.specstory/history` folder exists or it's empty**, respond with:
+
+> No SpecStory session history found in this directory.
+>
+> SpecStory automatically saves your AI coding sessions for later reference. To start recording your sessions, install SpecStory from https://specstory.com
+
+Then stop - do not proceed with the remaining steps.
+
+**If sessions are found**, continue with the analysis. If the argument is "today", filter to today's date. Otherwise use the number provided (default 5).
 
 ### Step 2: Read and Analyze Each Session
 

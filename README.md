@@ -93,11 +93,16 @@ You can also invoke skills directly:
 
 ## Prerequisites
 
-These skills work with your local `.specstory/history` directory. To use them:
+These skills work with your local `.specstory/history` directory, which is created by [SpecStory](https://github.com/specstoryai/getspecstory) when capturing AI coding sessions.
 
-1. Install the [SpecStory VS Code extension](https://marketplace.visualstudio.com/items?itemName=SpecStory.specstory)
-2. Have some coding sessions captured in `.specstory/history`
-3. Install the skills using one of the methods above
+**Install SpecStory for your tool:**
+
+| Tool | Installation |
+|------|--------------|
+| **Cursor / VS Code** | Search "SpecStory" in Extensions (Cmd/Ctrl+Shift+X) |
+| **Claude Code / CLI agents** | `brew tap specstoryai/tap && brew install specstory` |
+
+Once installed, your AI conversations are automatically saved to `.specstory/history/` in each project.
 
 ## Contributing
 

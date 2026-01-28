@@ -2,8 +2,6 @@
 
 A collection of AI agent skills for working with [SpecStory](https://specstory.com) session histories. Built for developers who want Claude Code (or similar AI coding assistants) to help analyze, organize, and extract insights from their AI-assisted coding sessions.
 
-Built by [SpecStory](https://specstory.com). SpecStory captures full AI conversation histories including timestamps, prompts, responses, tool calls, and file references.
-
 **Contributions welcome!** Found a way to improve a skill or have a new one to add? [Open a PR](#contributing).
 
 ## What are Skills?

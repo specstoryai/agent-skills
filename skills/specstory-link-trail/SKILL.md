@@ -1,6 +1,6 @@
 ---
 name: specstory-link-trail
-description: Review SpecStory history transcripts and create a summary of all URLs that were fetched via WebFetch.
+description: Review SpecStory AI coding sessions in .specstory/history and create a summary of all URLs that were fetched via WebFetch.
 argument-hint: [history-file-or-pattern]
 ---
 

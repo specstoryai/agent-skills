@@ -1,6 +1,6 @@
 ---
 name: specstory-organize
-description: Organizes the project's .specstory/history directory into year and month subfolders
+description: Organizes SpecStory AI coding sessions in the project's .specstory/history directory into year and month subfolders.
 allowed-tools: Bash, Read, Write
 license: Apache-2.0
 metadata:

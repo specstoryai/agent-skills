@@ -1,6 +1,6 @@
 ---
 name: specstory-guard
-description: Install a pre-commit guardrail that scans .specstory/history for potential secrets and blocks commits until they are removed or redacted.
+description: Install a pre-commit guardrail for SpecStory AI coding sessions that scans .specstory/history for potential secrets and blocks commits until they are removed or redacted.
 ---
 
 # SpecStory Guard

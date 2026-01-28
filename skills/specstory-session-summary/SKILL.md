@@ -1,6 +1,6 @@
 ---
 name: specstory-session-summary
-description: Summarize recent SpecStory sessions in standup format. Use when the user wants to review recent coding sessions, prepare for standups, track work progress, or understand what was accomplished in previous sessions from their .specstory/history folder.
+description: Summarize recent SpecStory AI coding sessions in standup format. Use when the user wants to review sessions from .specstory/history, prepare for standups, track work progress, or understand what was accomplished.
 metadata:
   author: SpecStory
   version: "1.0"

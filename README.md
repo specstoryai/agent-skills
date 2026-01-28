@@ -52,7 +52,7 @@ npx skills add specstoryai/agent-skills --skill specstory-yak specstory-session-
 npx skills add specstoryai/agent-skills --list
 ```
 
-This automatically installs to your `.claude/skills/` directory.
+This installs skills to `.agents/skills/` and symlinks them to each detected agent's directory (`.claude/skills/`, `.cursor/skills/`, `.codex/skills/`, etc.). The CLI auto-detects which agents you have installed.
 
 ### Option 2: Claude Code Plugin
 

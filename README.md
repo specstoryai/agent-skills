@@ -15,10 +15,10 @@ Skills are markdown files that give AI agents specialized knowledge and workflow
 <!-- SKILLS:START -->
 | Skill | Description |
 |-------|-------------|
-| [link-trail](skills/link-trail/) | Review SpecStory history transcripts and create a summary of all URLs that were fetched via WebFetch. |
-| [session-summary](skills/session-summary/) | Summarize recent SpecStory sessions in standup format. Use when the user wants to review recent coding sessions, prepare for standups, or track work progress. |
 | [specstory-guard](skills/specstory-guard/) | Install a pre-commit guardrail that scans .specstory/history for potential secrets and blocks commits until they are removed or redacted. |
+| [specstory-link-trail](skills/specstory-link-trail/) | Review SpecStory history transcripts and create a summary of all URLs that were fetched via WebFetch. |
 | [specstory-organize](skills/specstory-organize/) | Organizes the project's .specstory/history directory into year and month subfolders. |
+| [specstory-session-summary](skills/specstory-session-summary/) | Summarize recent SpecStory sessions in standup format. Use when the user wants to review recent coding sessions, prepare for standups, or track work progress. |
 | [specstory-yak](skills/specstory-yak/) | Analyze your AI coding sessions for yak shaving - when your initial goal got derailed into rabbit holes. Get a "yak shave score" for each session. |
 <!-- SKILLS:END -->
 
@@ -58,13 +58,13 @@ Once installed, just ask Claude Code to help with SpecStory-related tasks:
 → Uses specstory-yak skill
 
 "Summarize my coding sessions from this week"
-→ Uses session-summary skill
+→ Uses specstory-session-summary skill
 
 "Organize my specstory history folder"
 → Uses specstory-organize skill
 
 "What URLs did I visit in my last session?"
-→ Uses link-trail skill
+→ Uses specstory-link-trail skill
 
 "Set up secret scanning for my specstory files"
 → Uses specstory-guard skill
@@ -74,9 +74,9 @@ You can also invoke skills directly:
 
 ```
 /specstory-yak
-/session-summary
+/specstory-session-summary
 /specstory-organize
-/link-trail
+/specstory-link-trail
 /specstory-guard
 ```
 
@@ -84,8 +84,8 @@ You can also invoke skills directly:
 
 ### Session Analysis
 - `specstory-yak` - Detect rabbit holes and scope creep in your coding sessions
-- `session-summary` - Generate standup-ready summaries of recent work
-- `link-trail` - Track all URLs fetched during sessions
+- `specstory-session-summary` - Generate standup-ready summaries of recent work
+- `specstory-link-trail` - Track all URLs fetched during sessions
 
 ### Organization & Maintenance
 - `specstory-organize` - Keep history files organized by year/month

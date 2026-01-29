@@ -28,10 +28,10 @@ Once installed, your AI conversations are automatically saved to `.specstory/his
 <!-- SKILLS:START -->
 | Skill | Description |
 |-------|-------------|
-| [specstory-guard](skills/specstory-guard/) | Install a pre-commit guardrail for SpecStory AI coding sessions that scans .specstory/history for potential secrets and... |
-| [specstory-link-trail](skills/specstory-link-trail/) | Review SpecStory AI coding sessions in .specstory/history and create a summary of all URLs that were fetched via... |
-| [specstory-organize](skills/specstory-organize/) | Organizes SpecStory AI coding sessions in the project's .specstory/history directory into year and month subfolders. |
-| [specstory-project-stats](skills/specstory-project-stats/) | Fetch project statistics from SpecStory's cloud platform. Use when user says "get project stats", "show SpecStory... |
+| [specstory-guard](skills/specstory-guard/) | Install a pre-commit hook that scans .specstory/history for secrets before commits. Run when user says "set up secret... |
+| [specstory-link-trail](skills/specstory-link-trail/) | Track all URLs fetched during SpecStory AI coding sessions. Run when user says "show my link trail", "what URLs did I... |
+| [specstory-organize](skills/specstory-organize/) | Organize SpecStory AI coding sessions in .specstory/history into year/month folders. Run when user says "organize my... |
+| [specstory-project-stats](skills/specstory-project-stats/) | Fetch project statistics from SpecStory Cloud. Run when user says "get project stats", "show SpecStory stats", "project... |
 | [specstory-session-summary](skills/specstory-session-summary/) | Summarize recent SpecStory AI coding sessions in standup format. Use when the user wants to review sessions from... |
 | [specstory-yak](skills/specstory-yak/) | Analyze your SpecStory AI coding sessions in .specstory/history for yak shaving - when your initial goal got derailed... |
 <!-- SKILLS:END -->

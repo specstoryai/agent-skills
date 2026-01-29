@@ -5,7 +5,7 @@ license: Apache-2.0
 metadata:
   author: SpecStory, Inc.
   version: "1.0.0"
-  argument-hint: "[install|scan|--root PATH]"
+  argument-hint: "[install|scan|check|uninstall] [--root PATH]"
 allowed-tools: Bash, Read, Write
 ---
 
@@ -41,19 +41,23 @@ Guard prevents accidental commits of these secrets.
 | `/specstory-guard install` | Install the pre-commit hook |
 | `/specstory-guard scan` | Run a manual scan without installing |
 | `/specstory-guard check` | Alias for scan |
+| `/specstory-guard uninstall` | Remove the pre-commit hook |
 
 ### Direct Script Usage
 
 ```bash
 # Install the pre-commit hook
-python skills/specstory-guard/scripts/setup.py install
+python skills/specstory-guard/scripts/guard.py install
 
 # Run a manual scan
-python skills/specstory-guard/scripts/scan.py --root .
+python skills/specstory-guard/scripts/guard.py scan --root .
+
+# Uninstall the hook
+python skills/specstory-guard/scripts/guard.py uninstall
 
 # Scan with custom allowlist
 SPECSTORY_GUARD_ALLOWLIST='example-key,PLACEHOLDER_.*' \
-  python skills/specstory-guard/scripts/scan.py --root .
+  python skills/specstory-guard/scripts/guard.py scan --root .
 ```
 
 ## Output
@@ -100,7 +104,7 @@ SpecStory Guard - Setup
 Pre-commit hook installed at .git/hooks/pre-commit
 
 The hook will now scan .specstory/history/ before each commit.
-To test: python skills/specstory-guard/scripts/scan.py --root .
+To test: python skills/specstory-guard/scripts/guard.py scan --root .
 ```
 
 ## Detected Patterns
@@ -122,7 +126,7 @@ If you have false positives (example keys, placeholders), use the allowlist:
 ```bash
 # Environment variable (comma-separated regex patterns)
 SPECSTORY_GUARD_ALLOWLIST='example-key,PLACEHOLDER_.*,test-token' \
-  python skills/specstory-guard/scripts/scan.py --root .
+  python skills/specstory-guard/scripts/guard.py scan --root .
 ```
 
 ## Remediation

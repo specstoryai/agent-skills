@@ -117,6 +117,7 @@ def scan_file(
                             rule_name=pattern.name,
                             snippet=build_snippet(line, match),
                         )
+                    )
                     if len(findings) >= max_matches_per_file:
                         return findings
                 if len(findings) >= max_matches_per_file:

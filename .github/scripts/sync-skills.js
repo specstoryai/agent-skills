@@ -1,16 +1,15 @@
 #!/usr/bin/env node
 /**
- * Sync marketplace.json and README.md with skills directory.
+ * Sync README.md with skills directory.
  *
  * Scans the skills/ directory for valid skills (directories containing SKILL.md)
- * and updates marketplace.json and the README skills table to match.
+ * and updates the README skills table to match.
  */
 
 const fs = require("fs");
 const path = require("path");
 
 const SKILLS_DIR = "skills";
-const MARKETPLACE_FILE = ".claude-plugin/marketplace.json";
 const README_FILE = "README.md";
 
 /**
@@ -73,13 +72,6 @@ function getSkillsWithMetadata() {
 }
 
 /**
- * Update skill count in description
- */
-function updateSkillCount(description, count) {
-  return description.replace(/\d+ skills/, `${count} skills`);
-}
-
-/**
  * Truncate description to a maximum length
  */
 function truncateDescription(description, maxLength = 120) {
@@ -131,54 +123,16 @@ function updateReadme(skills) {
   return true;
 }
 
-/**
- * Update marketplace.json with skills list
- */
-function updateMarketplace(skills) {
-  const marketplace = JSON.parse(fs.readFileSync(MARKETPLACE_FILE, "utf8"));
-  const plugin = marketplace.plugins[0];
-  const existingSkills = plugin.skills || [];
-  const currentSkills = skills.map((s) => s.path);
-
-  if (JSON.stringify(currentSkills) === JSON.stringify(existingSkills)) {
-    return { updated: false };
-  }
-
-  plugin.skills = currentSkills;
-  plugin.description = updateSkillCount(plugin.description, currentSkills.length);
-
-  fs.writeFileSync(MARKETPLACE_FILE, JSON.stringify(marketplace, null, 2) + "\n");
-
-  const added = currentSkills.filter((s) => !existingSkills.includes(s));
-  const removed = existingSkills.filter((s) => !currentSkills.includes(s));
-
-  return { updated: true, added, removed };
-}
-
 function main() {
   const skills = getSkillsWithMetadata();
-
-  const marketplaceResult = updateMarketplace(skills);
   const readmeUpdated = updateReadme(skills);
 
-  if (!marketplaceResult.updated && !readmeUpdated) {
+  if (!readmeUpdated) {
     console.log("Everything is already in sync");
     return;
   }
 
-  if (marketplaceResult.updated) {
-    if (marketplaceResult.added.length) {
-      console.log(`Added: ${marketplaceResult.added.join(", ")}`);
-    }
-    if (marketplaceResult.removed.length) {
-      console.log(`Removed: ${marketplaceResult.removed.join(", ")}`);
-    }
-    console.log(`Updated marketplace.json (${skills.length} skills)`);
-  }
-
-  if (readmeUpdated) {
-    console.log("Updated README.md skills table");
-  }
+  console.log("Updated README.md skills table");
 }
 
 main();

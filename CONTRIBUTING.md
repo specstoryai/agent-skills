@@ -6,8 +6,6 @@ We welcome contributions! Whether it's a new skill, an improvement to an existin
 
 ```
 agent-skills/
-├── .claude-plugin/
-│   └── marketplace.json   # Claude Code plugin manifest (auto-updated)
 ├── .github/
 │   ├── scripts/
 │   │   └── sync-skills.js # Script to sync skills across files
@@ -33,11 +31,10 @@ agent-skills/
 **What it does:**
 - Runs `.github/scripts/sync-skills.js`
 - Scans `skills/` directory for valid skills (directories with `SKILL.md`)
-- Updates `.claude-plugin/marketplace.json` with the current skills list
 - Updates the README.md skills table between `<!-- SKILLS:START -->` and `<!-- SKILLS:END -->`
 - Auto-commits changes if anything was updated
 
-This means you don't need to manually update the README table or marketplace.json when adding/removing skills.
+This means you don't need to manually update the README table when adding/removing skills.
 
 ### `validate-skill.yml`
 

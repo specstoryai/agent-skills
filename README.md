@@ -55,19 +55,7 @@ npx skills add specstoryai/agent-skills --list
 
 This installs skills to `.agents/skills/` and symlinks them to each detected agent's directory (`.claude/skills/`, `.cursor/skills/`, `.codex/skills/`, etc.). The CLI auto-detects which agents you have installed.
 
-### Option 2: Claude Code Plugin
-
-Install via Claude Code's built-in plugin system:
-
-```bash
-# Add the marketplace
-/plugin marketplace add specstoryai/agent-skills
-
-# Install all SpecStory skills
-/plugin install specstory-skills
-```
-
-### Option 3: Clone and Copy
+### Option 2: Clone and Copy
 
 Clone the entire repo and copy the skills folder:
 
@@ -76,7 +64,7 @@ git clone https://github.com/specstoryai/agent-skills.git
 cp -r agent-skills/skills/* .claude/skills/
 ```
 
-### Option 4: Git Submodule
+### Option 3: Git Submodule
 
 Add as a submodule for easy updates:
 
@@ -86,7 +74,7 @@ git submodule add https://github.com/specstoryai/agent-skills.git .claude/agent-
 
 Then reference skills from `.claude/agent-skills/skills/`.
 
-### Option 5: Fork and Customize
+### Option 4: Fork and Customize
 
 1. Fork this repository
 2. Customize skills for your specific needs

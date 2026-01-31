@@ -4,7 +4,7 @@ Guidelines for AI agents working in this repository.
 
 ## Repository Overview
 
-This repository contains **Agent Skills** for AI agents following the [Agent Skills specification](https://agentskills.io/specification.md). It also serves as a **Claude Code plugin marketplace** via `.claude-plugin/marketplace.json`.
+This repository contains **Agent Skills** for AI agents following the [Agent Skills specification](https://agentskills.io/specification.md).
 
 - **Name**: SpecStory Agent Skills
 - **GitHub**: [specstoryai/agent-skills](https://github.com/specstoryai/agent-skills)
@@ -15,8 +15,6 @@ This repository contains **Agent Skills** for AI agents following the [Agent Ski
 
 ```
 agent-skills/
-├── .claude-plugin/
-│   └── marketplace.json   # Claude Code plugin marketplace manifest
 ├── skills/                # Agent Skills
 │   └── specstory-*/
 │       ├── SKILL.md       # Required skill file
@@ -148,15 +146,6 @@ No SpecStory session history found.
 Install SpecStory:
 - Cursor/VS Code: Search "SpecStory" in Extensions (Cmd/Ctrl+Shift+X)
 - Claude Code/CLI: brew tap specstoryai/tap && brew install specstory
-```
-
-## Claude Code Plugin
-
-This repo serves as a plugin marketplace. The manifest at `.claude-plugin/marketplace.json` lists all skills for installation via:
-
-```bash
-/plugin marketplace add specstoryai/agent-skills
-/plugin install specstory-skills
 ```
 
 ## Git Workflow
